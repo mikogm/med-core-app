@@ -130,6 +130,14 @@ export const modules: Module[] = [
     topicIds: ['histologia-repaso-s1'],
   },
   {
+    id: 'histologia-uad-s2',
+    badge: 'UAD · Histología I — Semana 2',
+    title: 'Histología: tejido epitelial',
+    subtitle: 'Generalidades, clasificación, funciones, nutrición y glándulas del epitelio.',
+    emoji: '🔬',
+    topicIds: ['histologia-epitelial'],
+  },
+  {
     id: 'bioestadistica',
     badge: 'UAD · Epidemiología y Bioestadística',
     title: 'Bioestadística',

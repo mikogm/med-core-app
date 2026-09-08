@@ -487,7 +487,7 @@ export const uadMedicina: Plan = {
           code: 'HS01006',
           hasLab: true,
           tags: ['celular'],
-          topicIds: ['histologia-introduccion', 'histologia-microscopia-tecnica', 'histologia-celula'],
+          topicIds: ['histologia-introduccion', 'histologia-microscopia-tecnica', 'histologia-celula', 'histologia-epitelial'],
           content: {
             area: 'Ciencias Básicas',
             credits: 8,
@@ -514,12 +514,14 @@ export const uadMedicina: Plan = {
               {
                 number: 2,
                 title: 'Tejido epitelial',
+                estado: 'impartido',
+                topicIds: ['histologia-epitelial'],
                 temas: [
-                  'Generalidades',
-                  'Clasificación',
-                  'Características',
-                  'Funciones',
-                  'Aplicaciones clínicas',
+                  'Clase 1 (impartida): generalidades del epitelio y los 4 tejidos básicos; epitelio avascular sobre membrana basal',
+                  'Clasificación por número de capas (simple, estratificado, pseudoestratificado, transicional) y por forma celular (plano, cúbico, cilíndrico)',
+                  'Las cinco funciones (protección, transporte, absorción, síntesis/secreción, recepción)',
+                  'Nutrición por difusión desde el corion (liso vs papilar) y glándulas exocrinas vs endocrinas',
+                  'Pendiente (siguiente clase): polaridad celular (dominios apical, basal y lateral)',
                 ],
               },
               {
@@ -554,6 +556,7 @@ export const uadMedicina: Plan = {
             materiales: [
               { title: 'Semana 1 — Deck completo (114 diapositivas): célula, microscopía y tinciones', file: 'Histologia I - Semana 1 (deck completo).pdf', kind: 'Clase' },
               { title: 'Proyecto Integrador Semana 1 — Organelos celulares', file: 'Histologia 1 - Semana 1 - Proyecto Integrador.pdf', kind: 'Entrega' },
+              { title: 'Semana 2 · Clase 1 — Tejido epitelial', file: 'Histologia 2 - Semana 2 - Clase 1 Tejido Epitelial.pdf', kind: 'Clase' },
             ],
             recursos: [
               { label: 'Acland Anatomy', url: 'https://aclandanatomy.com/' },
