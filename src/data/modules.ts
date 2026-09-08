@@ -114,6 +114,14 @@ export const modules: Module[] = [
     topicIds: ['genetica-conceptos', 'genetica-mendel', 'genetica-adn'],
   },
   {
+    id: 'genetica-uad-s2',
+    badge: 'UAD · Genética Básica — Semana 2',
+    title: 'Genética: dogma central, transcripción y traducción',
+    subtitle: 'Dogma y ARN, transcripción, cromosomas y cariotipo, y la síntesis de proteínas.',
+    emoji: '🧬',
+    topicIds: ['genetica-dogma-transcripcion', 'genetica-cromosomas-cariotipo', 'genetica-traduccion'],
+  },
+  {
     id: 'histologia-uad-s1',
     badge: 'UAD · Histología I — Semana 1',
     title: 'Histología: célula, microscopía y técnica',
