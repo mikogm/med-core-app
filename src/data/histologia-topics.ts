@@ -635,4 +635,236 @@ export const histologiaTopics: Topic[] = [
       },
     ],
   },
+  {
+    id: 'histologia-epitelial',
+    title: 'Tejido epitelial: generalidades y clasificación',
+    subtitle: 'Revestimiento y glándulas: capas, forma celular, funciones, nutrición y ejemplos anatómicos',
+    colorKey: 'histologia',
+    categoria: 'Histología',
+    emoji: '🔬',
+    keyPoints: [
+      'El epitelio es AVASCULAR: descansa sobre una membrana basal y se nutre por difusión desde el tejido conectivo subyacente (corion).',
+      'Se clasifica con dos preguntas: ¿cuántas capas? (simple/estratificado/pseudoestratificado/transicional) y ¿qué forma? (plano/cúbico/cilíndrico).',
+      'Regla de oro del estratificado: se nombra por la forma de la capa MÁS SUPERFICIAL, no por todas las células.',
+      'Pseudoestratificado: parece de varias capas pero TODAS las células tocan la membrana basal (solo algunas llegan a la superficie).',
+      'Transicional (urotelio): cambia de forma con la distensión; es EXCLUSIVO del sistema urinario.',
+      'Asociaciones de examen: alvéolos/Bowman/vasos → plano simple; tiroides/túbulos renales → cúbico simple; tubo digestivo → cilíndrico simple; piel → plano estratificado queratinizado; tráquea → cilíndrico pseudoestratificado ciliado.',
+      'Cinco funciones: protección, transporte (cilios), absorción, síntesis/secreción y recepción de estímulos.',
+      'Glándulas: exocrinas secretan por conductos; endocrinas vierten a la sangre.',
+    ],
+    sections: [
+      {
+        id: 'hepi-1',
+        number: 1,
+        title: 'Los cuatro tejidos básicos',
+        keyTerms: ['tejido', 'epitelial', 'conectivo', 'muscular', 'nervioso'],
+        blocks: [
+          {
+            type: 'paragraph',
+            content:
+              'Un tejido es la asociación ordenada de células con propiedades estructurales, fisiológicas y químicas semejantes. El cuerpo se organiza en cuatro tejidos básicos —epitelial, conectivo, muscular y nervioso—; en Histología I se estudian el epitelial y el conectivo (el muscular y el nervioso quedan para Histología II). La meta de la materia no es solo etiquetar "qué tejido es", sino aprender a DESCRIBIRLO y DIFERENCIARLO en un corte donde a menudo coexisten varios.',
+          },
+          {
+            type: 'table',
+            title: 'Los cuatro tejidos y su idea central',
+            data: {
+              headers: ['Tejido', 'Idea principal'],
+              rows: [
+                ['Epitelial', 'Revestimiento, protección, absorción y secreción'],
+                ['Conectivo', 'Sostén y unión (incluye hueso, cartílago y sangre)'],
+                ['Muscular', 'Contracción y movimiento'],
+                ['Nervioso', 'Recepción, integración y conducción de impulsos'],
+              ],
+            },
+          },
+        ],
+      },
+      {
+        id: 'hepi-2',
+        number: 2,
+        title: 'Generalidades del epitelio',
+        keyTerms: ['revestimiento', 'glandular', 'avascular', 'membrana basal', 'renovación'],
+        blocks: [
+          {
+            type: 'paragraph',
+            content:
+              'El tejido epitelial se presenta en dos grandes formas: los epitelios de REVESTIMIENTO (cubren superficies externas o revisten cavidades internas) y los epitelios GLANDULARES o secretores (forman glándulas). Comparten rasgos que conviene tener siempre presentes: son AVASCULARES (no tienen vasos propios), descansan sobre una membrana basal, se apoyan en un tejido conectivo subyacente que sí lleva los vasos, y tienen alta capacidad de renovación (a velocidad variable según el órgano). Embriológicamente pueden derivar de las tres hojas: ectodermo (epidermis), mesodermo (mesotelio) y endodermo (epitelio intestinal) — regla mnemónica ecto = exterior, meso = medio, endo = interior.',
+          },
+        ],
+      },
+      {
+        id: 'hepi-3',
+        number: 3,
+        title: 'Las cinco funciones',
+        keyTerms: ['protección', 'transporte', 'absorción', 'secreción', 'recepción'],
+        blocks: [
+          {
+            type: 'paragraph',
+            content:
+              'La forma del epitelio sigue a su función, así que conocer las cinco funciones ayuda a predecir qué epitelio se encontrará en cada sitio.',
+          },
+          {
+            type: 'table',
+            title: 'Función · cómo · ejemplo',
+            data: {
+              headers: ['Función', 'Cómo / ejemplo'],
+              rows: [
+                ['Protección', 'Barrera contra virus, bacterias, hongos y partículas (superficies expuestas: piel).'],
+                ['Transporte', 'Cilios del polo apical que desplazan líquido/partículas (tráquea).'],
+                ['Absorción', 'Captación de agua, iones y moléculas (intestino delgado).'],
+                ['Síntesis y secreción', 'Producción de glucoproteínas u hormonas (sudoríparas, tiroides).'],
+                ['Recepción de estímulos', 'Neuroepitelios sensoriales (gusto, olfato).'],
+              ],
+            },
+          },
+        ],
+      },
+      {
+        id: 'hepi-4',
+        number: 4,
+        title: 'Cómo clasificar — el algoritmo',
+        keyTerms: ['número de capas', 'forma celular', 'capa superficial', 'queratina'],
+        blocks: [
+          {
+            type: 'paragraph',
+            content:
+              'Clasificar un epitelio no es memorizar una lista, sino seguir un procedimiento con dos preguntas encadenadas. Primero: ¿cuántas capas hay? — simple (una), estratificado (varias), pseudoestratificado (parece varias) o transicional. Segundo: ¿qué forma tienen las células? — plano (escamoso), cúbico (cuboidal) o cilíndrico. La combinación de ambas da el nombre (p. ej. "plano simple", "cilíndrico estratificado").',
+          },
+          {
+            type: 'note',
+            title: 'Algoritmo de 4 pasos',
+            content:
+              '1) Localiza la MEMBRANA BASAL (marca la base del epitelio). 2) Cuenta las capas: una → simple; varias → estratificado; parece varias pero todas tocan la membrana basal → pseudoestratificado; cambia de forma por distensión y es del aparato urinario → transicional. 3) Mira la CAPA SUPERFICIAL (en el estratificado, es la que da el nombre): plana / cúbica / cilíndrica. 4) Si es plano estratificado, ¿hay QUERATINA superficial? Sí → queratinizado; no → no queratinizado.',
+          },
+        ],
+      },
+      {
+        id: 'hepi-5',
+        number: 5,
+        title: 'Epitelios simples',
+        keyTerms: ['plano simple', 'cúbico simple', 'cilíndrico simple', 'endotelio', 'mesotelio'],
+        blocks: [
+          {
+            type: 'paragraph',
+            content:
+              'En el epitelio simple hay una sola capa y TODAS las células tocan la membrana basal. La forma de esa única capa lo subdivide, y cada forma se asocia a una función: cuanto más plana la célula, más fácil el intercambio; cuanto más alta, más maquinaria de absorción o secreción alberga.',
+          },
+          {
+            type: 'table',
+            title: 'Los tres simples',
+            data: {
+              headers: ['Epitelio', 'Función típica', 'Localización clave'],
+              rows: [
+                ['Plano simple (escamoso)', 'Intercambio/barrera delgada', 'Alvéolos, cápsula de Bowman, vasos (endotelio), pleura, peritoneo, asa de Henle, mesotelio'],
+                ['Cúbico simple', 'Secreción/absorción moderada', 'Túbulos renales, folículo tiroideo, conductos glandulares'],
+                ['Cilíndrico simple', 'Absorción y secreción', 'Tubo digestivo, útero, oviducto, vesícula biliar'],
+              ],
+            },
+          },
+        ],
+      },
+      {
+        id: 'hepi-6',
+        number: 6,
+        title: 'Epitelios estratificados',
+        keyTerms: ['plano estratificado', 'queratinizado', 'no queratinizado', 'epidermis'],
+        blocks: [
+          {
+            type: 'paragraph',
+            content:
+              'El epitelio estratificado tiene dos o más capas y, a diferencia del simple, NO todas las células tocan la membrana basal: se apilan unas sobre otras. Por eso se nombra por la forma de la capa MÁS SUPERFICIAL —"plano estratificado" no quiere decir que todas las células sean planas, sino que las superficiales lo son—. En el plano estratificado la distinción clínica clave es si la superficie está queratinizada.',
+          },
+          {
+            type: 'comparison',
+            title: 'Plano estratificado: no queratinizado vs. queratinizado',
+            left: {
+              title: 'No queratinizado',
+              items: ['Células superficiales planas que CONSERVAN el núcleo.', 'Sin capa de queratina.', 'Boca, faringe, esófago, cuerdas vocales, vagina.'],
+            },
+            right: {
+              title: 'Queratinizado',
+              items: ['Células superficiales muertas, SIN núcleo, sustituidas por queratina.', 'Capa de queratina superficial.', 'Epidermis (piel fina y gruesa). Renovación ≈ 28–30 días.'],
+            },
+          },
+          {
+            type: 'note',
+            content:
+              'También existen el cúbico estratificado (superficie cúbica; conductos de glándulas sudoríparas) y el cilíndrico estratificado (superficie cilíndrica; grandes conductos excretores, uretra masculina). En todos rige la regla: el nombre lo da la capa superficial.',
+          },
+        ],
+      },
+      {
+        id: 'hepi-7',
+        number: 7,
+        title: 'Pseudoestratificado y transicional',
+        keyTerms: ['pseudoestratificado', 'cilios', 'transicional', 'urotelio', 'distensión'],
+        blocks: [
+          {
+            type: 'paragraph',
+            content:
+              'Dos epitelios se prestan a confusión. El cilíndrico PSEUDOESTRATIFICADO parece estratificado porque los núcleos están a distintas alturas, pero TODAS sus células tocan la membrana basal —solo que no todas llegan a la superficie—; suele tener cilios y aparece en la tráquea, los bronquios, el epidídimo y los conductos deferentes. El TRANSICIONAL (urotelio) es el que CAMBIA de forma según la distensión (células más cúbicas cuando está relajado, más planas cuando está distendido) y es EXCLUSIVO del sistema urinario: vías urinarias, cálices renales y uretra proximal. Su función es precisamente permitir que el órgano se distienda.',
+          },
+          {
+            type: 'note',
+            content:
+              'Trampa clásica: pseudoestratificado ≠ estratificado. La diferencia decisiva es la membrana basal —en el pseudoestratificado TODAS las células la contactan; en el estratificado, no—.',
+          },
+        ],
+      },
+      {
+        id: 'hepi-8',
+        number: 8,
+        title: 'Nutrición del epitelio y glándulas',
+        keyTerms: ['corion', 'difusión', 'corion papilar', 'exocrina', 'endocrina'],
+        blocks: [
+          {
+            type: 'paragraph',
+            content:
+              'Como el epitelio es avascular, se nutre por DIFUSIÓN: los vasos están en el tejido conectivo subyacente (el corion), y los nutrientes atraviesan la membrana basal a favor de gradiente (proceso pasivo, sin gasto de energía) hasta las células. Cuando el epitelio es delgado basta un corion LISO (interfaz plana, distancia de difusión corta); cuando es grueso, el conectivo forma proyecciones —papilas— hacia el epitelio (corion PAPILAR) que aumentan la superficie de contacto y acercan los vasos. En la piel, esas papilas dérmicas dibujan además la huella dactilar.',
+          },
+          {
+            type: 'list',
+            title: 'Glándulas: dos destinos de la secreción',
+            items: [
+              'Exocrinas: secretan a través de CONDUCTOS (sudoríparas, salivales, mamarias).',
+              'Endocrinas: vierten su producto directamente a la SANGRE (tiroides, páncreas).',
+            ],
+          },
+        ],
+      },
+      {
+        id: 'hepi-9',
+        number: 9,
+        title: 'Tabla maestra y núcleo de examen',
+        keyTerms: ['tabla maestra', 'asociaciones de examen'],
+        blocks: [
+          {
+            type: 'table',
+            title: 'Epitelio · nº capas · forma · localización clave',
+            data: {
+              headers: ['Epitelio', 'Capas', 'Forma', 'Localización clave'],
+              rows: [
+                ['Plano simple', '1', 'Plana', 'Alvéolos, Bowman, vasos (endotelio), pleura, peritoneo'],
+                ['Cúbico simple', '1', 'Cúbica', 'Túbulos renales, tiroides, conductos'],
+                ['Cilíndrico simple', '1', 'Alta', 'Tubo digestivo, útero, vesícula'],
+                ['Plano estrat. no queratinizado', 'Varias', 'Superficial plana (con núcleo)', 'Boca, esófago, vagina'],
+                ['Plano estrat. queratinizado', 'Varias', 'Superficial plana + queratina', 'Piel (epidermis)'],
+                ['Cúbico estratificado', 'Varias', 'Superficial cúbica', 'Conductos sudoríparos'],
+                ['Cilíndrico estratificado', 'Varias', 'Superficial cilíndrica', 'Grandes conductos, uretra masculina'],
+                ['Cilíndrico pseudoestratificado', '1 (funcional)', 'Alturas variables, cilios', 'Tráquea, bronquios, epidídimo'],
+                ['Transicional (urotelio)', 'Varias', 'Cambia con la distensión', 'Vías urinarias'],
+              ],
+            },
+          },
+          {
+            type: 'correlacion',
+            variant: 'dato',
+            title: '★ Núcleo duro para el examen',
+            content:
+              'Asociaciones que el docente priorizó: alvéolos / cápsula de Bowman / vasos → plano simple; tiroides / túbulos renales → cúbico simple; tubo digestivo → cilíndrico simple; piel → plano estratificado queratinizado; esófago → plano estratificado NO queratinizado; tráquea → cilíndrico pseudoestratificado ciliado; vías urinarias → transicional. Y las reglas: el estratificado se nombra por la capa superficial; el epitelio es avascular y se nutre por difusión desde el corion.',
+          },
+        ],
+      },
+    ],
+  },
 ]
