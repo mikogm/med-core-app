@@ -388,4 +388,377 @@ export const geneticaTopics: Topic[] = [
       },
     ],
   },
+  {
+    id: 'genetica-dogma-transcripcion',
+    title: 'Dogma central, ARN y transcripción',
+    subtitle: 'El flujo ADN → ARN → proteína, los tres tipos de ARN y cómo se transcribe el ADN',
+    colorKey: 'genetica',
+    categoria: 'Genética',
+    emoji: '🧬',
+    keyPoints: [
+      'Dogma central: ADN → ARN → proteína. Transcripción = ADN→ARN; traducción = ARN→proteína.',
+      'Dónde: la transcripción ocurre en el NÚCLEO; la traducción, en el CITOPLASMA (pregunta típica de examen).',
+      'Nucleósido = base + azúcar; nucleótido = base + azúcar + fosfato.',
+      'ADN vs ARN: desoxirribosa vs ribosa; doble vs una cadena; timina (T) vs uracilo (U).',
+      'Tres ARN — m: mensaje (copia del ADN), t: transferencia (anticodón + aminoácido), r: forma el ribosoma (se hace en el nucléolo).',
+      'Transcripción: la ARN polimerasa abre el ADN y copia una hebra por complementariedad A→U, T→A, C→G, G→C.',
+      'El ARNm inicial trae intrones + exones; el procesamiento elimina los intrones y deja solo los exones.',
+    ],
+    sections: [
+      {
+        id: 'gdog-1',
+        number: 1,
+        title: 'El dogma central',
+        keyTerms: ['dogma central', 'transcripción', 'traducción', 'núcleo', 'citoplasma'],
+        blocks: [
+          {
+            type: 'paragraph',
+            content:
+              'El dogma central resume cómo fluye la información genética: del ADN se copia un ARN, y del ARN se fabrica una proteína (ADN → ARN → proteína). El primer paso, ADN → ARN, es la transcripción; el segundo, ARN → proteína, es la traducción. Una clave que se pregunta mucho es DÓNDE ocurre cada uno: la transcripción sucede en el NÚCLEO (donde está el ADN) y la traducción en el CITOPLASMA (donde están los ribosomas). Por eso el ARN mensajero tiene que salir del núcleo para ser leído.',
+          },
+          {
+            type: 'table',
+            title: 'Los dos procesos',
+            data: {
+              headers: ['Proceso', 'Convierte', 'Dónde'],
+              rows: [
+                ['Transcripción', 'ADN → ARN', 'Núcleo'],
+                ['Traducción', 'ARN → proteína', 'Citoplasma'],
+              ],
+            },
+          },
+        ],
+      },
+      {
+        id: 'gdog-2',
+        number: 2,
+        title: 'Nucleósido vs. nucleótido · ADN vs. ARN',
+        keyTerms: ['nucleósido', 'nucleótido', 'desoxirribosa', 'ribosa', 'uracilo'],
+        blocks: [
+          {
+            type: 'paragraph',
+            content:
+              'La estructura del ADN (doble hélice, bases apareadas A–T/G–C, esqueleto azúcar-fosfato) ya se vio a fondo en «La molécula del ADN». Aquí conviene añadir una distinción nueva y muy preguntada: un NUCLEÓSIDO es solo base + azúcar, mientras que un NUCLEÓTIDO es base + azúcar + fosfato (el nucleótido lleva el fosfato). Y al comparar ADN y ARN: el ARN usa ribosa (no desoxirribosa), es de una sola cadena y sustituye la timina por uracilo (U).',
+          },
+          {
+            type: 'table',
+            title: 'ADN vs. ARN',
+            data: {
+              headers: ['Característica', 'ADN', 'ARN'],
+              rows: [
+                ['Azúcar', 'Desoxirribosa', 'Ribosa'],
+                ['Cadenas', 'Doble', 'Una'],
+                ['Base característica', 'Timina (T)', 'Uracilo (U)'],
+                ['Bases', 'A, T, G, C', 'A, U, G, C'],
+              ],
+            },
+          },
+        ],
+      },
+      {
+        id: 'gdog-3',
+        number: 3,
+        title: 'Los tres tipos de ARN',
+        keyTerms: ['ARNm', 'ARNt', 'ARNr', 'anticodón', 'nucléolo', 'intrones', 'exones'],
+        blocks: [
+          {
+            type: 'paragraph',
+            content:
+              'De la transcripción salen tres tipos de ARN con papeles complementarios, y una regla mnemónica los ordena por su inicial: m = mensaje, t = transferencia, r = ribosoma. El ARNm lleva la copia de las instrucciones del ADN hasta el ribosoma; el ARNt es el adaptador que reconoce cada codón (con su anticodón) y aporta el aminoácido correspondiente; el ARNr forma, con proteínas, el propio ribosoma y se sintetiza en el nucléolo.',
+          },
+          {
+            type: 'table',
+            title: 'ARNm · ARNt · ARNr',
+            data: {
+              headers: ['Tipo', 'Función'],
+              rows: [
+                ['ARNm (mensajero)', 'Copia el mensaje del ADN y lo lleva al ribosoma.'],
+                ['ARNt (transferencia)', 'Reconoce el codón con su anticodón y transporta el aminoácido.'],
+                ['ARNr (ribosomal)', 'Forma el ribosoma; se sintetiza en el nucléolo.'],
+              ],
+            },
+          },
+          {
+            type: 'correlacion',
+            variant: 'dato',
+            title: 'Intrones y exones',
+            content:
+              'El ARNm recién transcrito contiene intrones (regiones no codificantes) y exones (codificantes). Antes de traducirse, un procesamiento (splicing) ELIMINA los intrones y empalma solo los exones, de modo que el ARNm maduro que llega al ribosoma solo conserva la información que se usará para la proteína.',
+          },
+        ],
+      },
+      {
+        id: 'gdog-4',
+        number: 4,
+        title: 'La transcripción, paso a paso',
+        keyTerms: ['ARN polimerasa', 'molde', 'complementariedad', 'A→U'],
+        blocks: [
+          {
+            type: 'paragraph',
+            content:
+              'La transcripción ocurre en el núcleo y produce el ARNm a partir de una hebra molde de ADN. La ARN polimerasa abre localmente la doble hélice, toma una de las hebras como molde y va colocando ribonucleótidos por complementariedad de bases; luego el ADN se vuelve a cerrar. La regla de complementariedad es como la del ADN pero con U en lugar de T: frente a una A del ADN se coloca U, frente a T se coloca A, y G↔C como siempre. La longitud del ARNm es variable (la clase da ~2,200 nucleótidos ≈ 730 codones como referencia, no como valor fijo).',
+          },
+          {
+            type: 'table',
+            title: 'Complementariedad en la transcripción (ADN → ARN)',
+            data: {
+              headers: ['Base en el ADN molde', 'Base en el ARN'],
+              rows: [['A', 'U'], ['T', 'A'], ['C', 'G'], ['G', 'C']],
+            },
+          },
+          {
+            type: 'note',
+            content: 'Ejemplo: un molde de ADN A–T–G–C se transcribe como U–A–C–G en el ARN.',
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id: 'genetica-cromosomas-cariotipo',
+    title: 'Cromosomas, cariotipo y clasificación',
+    subtitle: 'Del empaquetamiento en nucleosomas a la estructura del cromosoma, su clasificación y el cariotipo humano',
+    colorKey: 'genetica',
+    categoria: 'Genética',
+    emoji: '🧬',
+    keyPoints: [
+      'Empaquetamiento: ADN → histonas → nucleosoma → cromatina → cromosoma.',
+      'Octámero de histonas = 2× H2A, H2B, H3 y H4 (8 histonas).',
+      'Cromatina = poco condensada (interfase); cromosoma = muy condensado y visible durante la división celular.',
+      'Estructura: cromátidas, centrómero, brazo p (corto), brazo q (largo), cinetocoro (une el huso) y telómeros (extremos).',
+      'Acortamiento de telómeros → envejecimiento celular y mayor entrada en apoptosis.',
+      'Clasificación por posición del centrómero: metacéntrico, submetacéntrico, acrocéntrico y telocéntrico.',
+      'Cariotipo humano: 46 cromosomas (23 pares); 1–22 autosomas y el par 23 sexual.',
+    ],
+    sections: [
+      {
+        id: 'gcro-1',
+        number: 1,
+        title: 'Empaquetamiento e histonas',
+        keyTerms: ['histonas', 'octámero', 'nucleosoma', 'cromatina', 'cromosoma'],
+        blocks: [
+          {
+            type: 'paragraph',
+            content:
+              'Como se vio en «La molécula del ADN», cada célula guarda ~2 m de ADN enrollándolo por niveles: ADN → histonas → nucleosoma → cromatina → cromosoma. El primer nivel es el nucleosoma: el ADN se enrolla alrededor de un octámero de histonas, formado por dos copias de cada una de H2A, H2B, H3 y H4 (2+2+2+2 = 8 histonas). Compactando nucleosomas se obtiene la cromatina, y condensándola al máximo, el cromosoma.',
+          },
+        ],
+      },
+      {
+        id: 'gcro-2',
+        number: 2,
+        title: 'Cromatina vs. cromosoma',
+        keyTerms: ['cromatina', 'cromosoma', 'interfase', 'división celular'],
+        blocks: [
+          {
+            type: 'comparison',
+            title: '¿Cuándo se ve cada uno?',
+            left: {
+              title: 'Cromatina',
+              items: ['ADN + proteínas poco condensados.', 'Estado habitual en la INTERFASE (célula sin dividirse).', 'No se distinguen cromosomas individuales.'],
+            },
+            right: {
+              title: 'Cromosoma',
+              items: ['Material genético muy condensado y organizado.', 'Visible durante la DIVISIÓN celular.', 'Es cuando se puede hacer el bandeo/cariotipo.'],
+            },
+          },
+          {
+            type: 'note',
+            content: 'Pregunta clásica: ¿cuándo se observan claramente los cromosomas? → durante la división celular (por eso el bandeo requiere cromosomas condensados).',
+          },
+        ],
+      },
+      {
+        id: 'gcro-3',
+        number: 3,
+        title: 'Estructura del cromosoma',
+        keyTerms: ['centrómero', 'brazo p', 'brazo q', 'cinetocoro', 'telómeros'],
+        blocks: [
+          {
+            type: 'list',
+            title: 'Partes del cromosoma',
+            items: [
+              'Cromátidas: las unidades longitudinales que lo forman.',
+              'Centrómero: la constricción que lo divide en dos brazos.',
+              'Brazo p: el brazo CORTO (p = petit).',
+              'Brazo q: el brazo LARGO.',
+              'Cinetocoro: región del centrómero donde se une el huso mitótico en la división.',
+              'Telómeros: los extremos protectores del cromosoma.',
+            ],
+          },
+          {
+            type: 'correlacion',
+            variant: 'clinica',
+            title: 'Telómeros y envejecimiento',
+            content:
+              'Los telómeros se acortan con cada división celular; cuando se acortan demasiado, la célula envejece y entra más fácilmente en apoptosis (muerte programada). Por eso el acortamiento telomérico es uno de los relojes del envejecimiento celular.',
+          },
+        ],
+      },
+      {
+        id: 'gcro-4',
+        number: 4,
+        title: 'Clasificación por el centrómero',
+        keyTerms: ['metacéntrico', 'submetacéntrico', 'acrocéntrico', 'telocéntrico'],
+        blocks: [
+          {
+            type: 'paragraph',
+            content:
+              'Los cromosomas se clasifican por dónde queda el centrómero, porque eso define el largo relativo de los brazos. La secuencia va del centro al extremo: metacéntrico → submetacéntrico → acrocéntrico → telocéntrico.',
+          },
+          {
+            type: 'table',
+            title: 'Tipos según la posición del centrómero',
+            data: {
+              headers: ['Tipo', 'Centrómero', 'Aspecto · ejemplo humano'],
+              rows: [
+                ['Metacéntrico', 'En el centro', 'Brazos similares (1, 3, 19, 20)'],
+                ['Submetacéntrico', 'Desplazado', 'Un brazo corto y otro largo (16, 17, 18 según la clase)'],
+                ['Acrocéntrico', 'Muy desplazado', 'Brazo corto muy pequeño (13, 14, 15, 21, 22)'],
+                ['Telocéntrico', 'En el extremo', 'Sin brazo corto claro; en humanos no es normal, se asocia a alteraciones'],
+              ],
+            },
+          },
+        ],
+      },
+      {
+        id: 'gcro-5',
+        number: 5,
+        title: 'Cariotipo humano',
+        keyTerms: ['cariotipo', '46 cromosomas', 'autosomas', 'cromosomas sexuales', 'bandeo'],
+        blocks: [
+          {
+            type: 'paragraph',
+            content:
+              'El ser humano tiene 46 cromosomas organizados en 23 pares: los pares 1 a 22 son autosomas y el par 23 son los cromosomas sexuales (XX o XY). El cariotipo es la representación ordenada de esos cromosomas, alineados por pares y por tamaño (del 1, el más grande, al 22, el autosoma más pequeño, y al final el par sexual). Sirve para estudiar la dotación cromosómica y detectar alteraciones numéricas o estructurales. Como el bandeo necesita cromosomas condensados, el cariotipo se prepara con células en división.',
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id: 'genetica-traduccion',
+    title: 'Aminoácidos, péptidos y traducción',
+    subtitle: 'De los aminoácidos y el enlace peptídico a las tres etapas de la síntesis de proteínas',
+    colorKey: 'genetica',
+    categoria: 'Genética',
+    emoji: '🧬',
+    keyPoints: [
+      '20 aminoácidos estándar; 9 esenciales (deben venir de la dieta), el resto los sintetiza el cuerpo.',
+      'La metionina es el aminoácido de inicio; su codón es AUG.',
+      'Enlace peptídico: une aminoácidos y libera una molécula de agua (H₂O).',
+      'Por número de aminoácidos: oligopéptido (<10), polipéptido (10–50), proteína (>50). Ejemplo gigante: titina (~33,000 aa).',
+      'Codón = 3 bases (64 combinaciones); el anticodón complementario está en el ARNt.',
+      'Traducción en 3 etapas: iniciación (AUG/Met), elongación (sitios A→P→E) y terminación (codón de paro).',
+      'Codones de paro: UAA, UAG y UGA (no codifican aminoácido).',
+    ],
+    sections: [
+      {
+        id: 'gtrad-1',
+        number: 1,
+        title: 'Aminoácidos',
+        keyTerms: ['aminoácido', 'esenciales', 'no esenciales', 'metionina', 'AUG'],
+        blocks: [
+          {
+            type: 'paragraph',
+            content:
+              'Los aminoácidos son las piezas con que se arman las proteínas; hay 20 estándar en el código genético, y como hay 64 codones, varios codones distintos pueden codificar el mismo aminoácido (el código es redundante). Se dividen en esenciales —los que el cuerpo NO puede fabricar y deben obtenerse de la dieta— y no esenciales —los que sí sintetiza a partir de otras moléculas—. Un aminoácido tiene un papel especial: la metionina, que inicia la síntesis y corresponde al codón AUG.',
+          },
+          {
+            type: 'list',
+            title: 'Los 9 aminoácidos esenciales',
+            items: [
+              'Histidina, Isoleucina, Leucina, Lisina, Metionina, Fenilalanina, Treonina, Triptófano y Valina.',
+              'Regla: deben venir de la alimentación (el cuerpo no los produce en cantidad suficiente).',
+              'Metionina = inicio (AUG).',
+            ],
+          },
+        ],
+      },
+      {
+        id: 'gtrad-2',
+        number: 2,
+        title: 'Mutaciones a nivel de aminoácido',
+        keyTerms: ['silenciosa', 'missense', 'nonsense'],
+        blocks: [
+          {
+            type: 'paragraph',
+            content:
+              'Un cambio en el ADN puede o no cambiar el aminoácido, y de eso depende su efecto. La pregunta clave no es solo "¿hubo mutación?", sino "¿cambió el aminoácido?" y "¿ese cambio altera la proteína?". Según eso se clasifican tres tipos.',
+          },
+          {
+            type: 'table',
+            title: 'Tipos de mutación puntual',
+            data: {
+              headers: ['Tipo', 'Efecto en el aminoácido'],
+              rows: [
+                ['Silenciosa', 'El codón cambia pero codifica el MISMO aminoácido (sin efecto).'],
+                ['Missense (sentido erróneo)', 'Cambia un aminoácido por otro (efecto variable: conservador o no).'],
+                ['Nonsense (sin sentido)', 'Genera un codón de PARO prematuro y trunca la proteína.'],
+              ],
+            },
+          },
+        ],
+      },
+      {
+        id: 'gtrad-3',
+        number: 3,
+        title: 'Péptidos y proteínas',
+        keyTerms: ['enlace peptídico', 'oligopéptido', 'polipéptido', 'proteína', 'titina'],
+        blocks: [
+          {
+            type: 'paragraph',
+            content:
+              'Los aminoácidos se unen por enlaces peptídicos, y cada enlace formado libera una molécula de agua (H₂O) —una reacción de condensación—. Según cuántos aminoácidos se encadenan, la molécula recibe distinto nombre. El extremo del rango lo ilustra la titina, una proteína del músculo de ~33,000 aminoácidos responsable de su elasticidad.',
+          },
+          {
+            type: 'table',
+            title: 'Clasificación por número de aminoácidos',
+            data: {
+              headers: ['Cantidad', 'Nombre'],
+              rows: [['Menos de 10', 'Oligopéptido'], ['10–50', 'Polipéptido'], ['Más de 50', 'Proteína']],
+            },
+          },
+        ],
+      },
+      {
+        id: 'gtrad-4',
+        number: 4,
+        title: 'La traducción en tres etapas',
+        keyTerms: ['iniciación', 'elongación', 'terminación', 'sitios A P E', 'codón', 'anticodón'],
+        blocks: [
+          {
+            type: 'paragraph',
+            content:
+              'La traducción decodifica el ARNm para construir la proteína: el ribosoma lee el mensaje de tres bases en tres bases (cada triplete es un codón) y los ARNt van aportando el aminoácido que corresponde a cada codón, reconociéndolo con su anticodón complementario. Ocurre en tres etapas —inicio, desarrollo y final— y el ribosoma usa tres sitios (A, P, E) por los que pasa cada ARNt.',
+          },
+          {
+            type: 'table',
+            title: 'Las tres etapas y los sitios del ribosoma',
+            data: {
+              headers: ['Etapa', 'Qué pasa'],
+              rows: [
+                ['Iniciación', 'Se reúnen ribosoma + ARNm + primer ARNt en el codón AUG (metionina).'],
+                ['Elongación', 'Sitios A→P→E: el ARNt ENTRA por A, la cadena se une en P, y el ARNt vacío SALE por E; se repite.'],
+                ['Terminación', 'Un codón de paro (UAA/UAG/UGA) detiene la síntesis y se libera el polipéptido.'],
+              ],
+            },
+          },
+          {
+            type: 'correlacion',
+            variant: 'dato',
+            title: '★ Lo que prioriza el examen',
+            content:
+              'La profesora indicó que NO hay que memorizar las 64 combinaciones de la tabla, sino dominar dos puntos: AUG = metionina = inicio, y UAA / UAG / UGA = codones de paro. Recuerda además la regla de los sitios: A entra, P proteína (se une), E sale.',
+          },
+          {
+            type: 'note',
+            title: 'La cadena completa',
+            content:
+              'Reconstruye todo el flujo: ADN → gen → transcripción → ARNm → codón → ARNt/anticodón → aminoácido → ribosoma → polipéptido → proteína. Tras usarse, el ARNm se degrada en el citoplasma y sus componentes se reutilizan.',
+          },
+        ],
+      },
+    ],
+  },
 ]
